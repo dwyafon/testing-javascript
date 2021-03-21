@@ -4,7 +4,7 @@ let result, expected
 
 result = product(5, 10)
 expected = 50
-// expect(result).toBe(expected) // calls expect -- return value is an object; toBe(), as a method on that object, is called, and the error is thrown
+expect(result).toBe(expected) // calls expect -- return value is an object; toBe(), as a method on that object, is called, and the error is thrown
 expect(result).toBeGreaterThan(expected)
 
 // returns an object with an assertion
