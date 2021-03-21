@@ -1,4 +1,5 @@
-const { product, sum } = require('../math')
+const { double } = require('webidl-conversions')
+const { product, sum, doubleNums } = require('../math')
 
 test('The product function multiples two numbers', () => {
   const result = product(10, 10)
@@ -12,9 +13,9 @@ test('The sum function adds two numbers', () => {
   expect(result).toBe(expected)
 })
 
-test('The sum function adds two numbers', () => {
-  const result = sum(5, 5)
-  const expected = 10
+test('The doubleNum function doubles a number', () => {
+  const result = doubleNums(10)
+  const expected = 20
   expect(result).toBeStrictlyEqualTo(expected)
 })
 
@@ -29,7 +30,7 @@ function test(title, callback) {
   }
 }
 
-// returns an object with an assertion
+// returns an object with assertions
 function expect(actual) {
   return {
     toBe(expected) {
