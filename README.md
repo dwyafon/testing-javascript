@@ -2,4 +2,4 @@
 
 ## Resources
 
-Kent C. Dodds' [Testing JavaScript](https://testingjavascript.com/)
+- [Testing JavaScript](https://testingjavascript.com/)
