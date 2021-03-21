@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/dwyafon/testing-javascript/issues"
   },
-  "homepage": "https://github.com/dwyafon/testing-javascript#readme"
+  "homepage": "https://github.com/dwyafon/testing-javascript#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
 }
