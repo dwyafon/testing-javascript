@@ -1,5 +1,6 @@
 const { asyncProduct, asyncDoubleNum } = require('../math')
 
+// test(title, callback)
 test('The asyncProduct function multiples two numbers', async () => {
   const result = await asyncProduct(10, 10)
   const expected = 100

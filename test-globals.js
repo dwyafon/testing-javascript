@@ -1,6 +1,6 @@
-function test(title, callback) {
+async function test(title, callback) {
     try {
-      callback()
+      await callback()
       console.log(`✓ ${title}: passed`)
     } catch (error) {
       console.error(`✕ ${title}: ${error}`)
@@ -16,7 +16,7 @@ function test(title, callback) {
         }
       },
       toBeStrictlyEqualTo(expected) {
-        if (!(actual === expected)) {
+        if (actual !== expected) {
           throw new Error(`${actual} is not strictly equal to ${expected}`)
         }
       },
